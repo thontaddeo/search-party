@@ -1,3 +1,10 @@
-<div class="list" ng-controller="SalesController">
+<div class="sales col-md-6" ng-controller="SalesController">
 	{{ greeting }}
+
+	<ul class="list">
+		<li ng-repeat="sale in sales">
+			<img ng-src="{{ sale.medium_image_uri }}">
+			<h4>{{ sale.title }}</h4>
+		</li>
+	</ul>
 </div>
